@@ -55,4 +55,5 @@ public class MiAdaptador extends RecyclerView.Adapter<MyViewHolder> {
         Log.d("getItemCount","getItemCount");
         return this.personas.size();
     }
+
 }

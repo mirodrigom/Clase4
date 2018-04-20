@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         personas.add(new Persona("Marcos","Ramos"));
         personas.add(new Persona("Miguel","Ramos"));
 
+        MyListener ml = new MyListener(0);
 
         RecyclerView rv = (RecyclerView)findViewById(R.id.rv);
         MiAdaptador ma = new MiAdaptador(personas);
@@ -39,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
         rv.setAdapter(ma);
         //Puede ser grilla o una linearlayout
         rv.setLayoutManager(new LinearLayoutManager(this));
+
+        //Agregar 5 personas desde un boton y hacer el notifyDataSetChange del adapador
+        //Notifydatasetchange cuando algo en personas cambio
 
     }
 }

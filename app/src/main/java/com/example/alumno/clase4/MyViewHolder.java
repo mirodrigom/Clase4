@@ -23,6 +23,8 @@ public class MyViewHolder extends RecyclerView.ViewHolder{
 
         //al apretar el boton , devolver posicion del indice.
     }
+
+    //Crear un mylystener por cada viewholder
     public void darPosicion(int posicion)
     {
         itemView.setOnClickListener(new MyListener(posicion));

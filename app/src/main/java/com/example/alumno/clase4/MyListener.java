@@ -21,4 +21,8 @@ public class MyListener implements View.OnClickListener {
     {
         Log.d("posicion", String.valueOf(this.position));
     }
+
+    public void setPosition(int position) {
+        this.position = position;
+    }
 }
